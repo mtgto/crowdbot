@@ -1,0 +1,41 @@
+{
+    "name": "crowdbot",
+    "version": "1.0.0",
+    "description": "Slack bot integrate with Atlassian crowd.",
+    "main": "dist/index.js",
+    "repository": "https://github.com/mtgto/crowdbot",
+    "author": "mtgto <hogerappa@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node .",
+        "build": "TS_NODE_PROJECT=webpack/tsconfig.json webpack --require ts-node/register --config webpack/dev.ts",
+        "build:prod": "TS_NODE_PROJECT=webpack/tsconfig.json webpack --require ts-node/register --config webpack/prod.ts",
+        "watch": "yarn run build --watch",
+        "precommit": "pretty-quick --staged",
+        "postinstall": "rimraf ./.cache-loader"
+    },
+    "private": true,
+    "devDependencies": {
+        "@types/node": "^10.3.5",
+        "@types/uglifyjs-webpack-plugin": "^1.1.0",
+        "@types/webpack": "^4.4.2",
+        "@types/webpack-merge": "^4.1.3",
+        "cache-loader": "^1.2.2",
+        "husky": "^0.14.3",
+        "prettier": "^1.13.5",
+        "pretty-quick": "^1.6.0",
+        "rimraf": "^2.6.2",
+        "ts-loader": "^4.4.1",
+        "ts-node": "^7.0.0",
+        "tsconfig-paths": "^3.4.0",
+        "tslint": "^5.10.0",
+        "typescript": "^2.9.2",
+        "uglifyjs-webpack-plugin": "^1.2.6",
+        "webpack": "^4.12.0",
+        "webpack-command": "^0.2.1",
+        "webpack-merge": "^4.1.3"
+    },
+    "dependencies": {
+        "botkit": "^0.6.14"
+    }
+}
