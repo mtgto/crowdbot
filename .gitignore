@@ -61,4 +61,4 @@ typings/
 .cache-loader/
 
 # Application
-dist/
+/index.js

@@ -1,12 +1,11 @@
 {
-    "extends": ["tslint:latest"],
+    "extends": ["tslint:latest", "tslint:recommended"],
     "rules": {
+        "max-line-length": [true, 120],
         "arrow-parens": false,
         "interface-name": [true, "never-prefix"],
-        "jsx-no-multiline-js": false,
-        "jsx-wrap-multiline": false,
         "no-implicit-dependencies": [true, "dev"],
-        "no-submodule-imports": [true, "@material-ui/core", "@material-ui/icons"],
+        "no-submodule-imports": [true, "atlassian-crowd-client"],
         "object-literal-key-quotes": false,
         "object-literal-sort-keys": false,
         "ordered-imports": true,

@@ -5,7 +5,7 @@ export const config: webpack.Configuration = {
     target: "node",
     entry: "./src/index.ts",
     output: {
-        path: path.resolve(__dirname, "../dist"),
+        path: path.resolve(__dirname, "../"),
         filename: "index.js",
     },
     resolve: {
@@ -20,6 +20,6 @@ export const config: webpack.Configuration = {
         ],
     },
     plugins: [
-        new webpack.IgnorePlugin(/^vertx$/), // `when` npm uses in non-node mode.
+        new webpack.IgnorePlugin(/^vertx$/), // `when` npm uses `vertx` in non-node mode.
     ],
 };
