@@ -6,9 +6,9 @@ This bot supports management of groups of Atlassian crowd.
 
 -   Show crowd groups which you belong to.
 -   Show the members which belong to group.
--   (Only admin) create <groupname> Create a new group.
+-   (Only admin) Create a new group.
 -   (Only admin) Add user(s) to Crowd group.
--   (Only admin) Remove user(s) from Crowd group.",
+-   (Only admin) Remove user(s) from Crowd group.
 
 ## Setup
 
@@ -23,16 +23,40 @@ Create a bot and get token at https://my.slack.com/services/new/bot .
 
 ### 3. Launch
 
-```console
-yarn install
+#### 3-a. at local
 
-CROWDBOT_LANG=en \
+example:
+
+```console
+$ yarn install
+```
+
+Example (change it to your crowd account and slack token)
+
+```console
+$ CROWDBOT_LANG=en \
 CROWD_BASE_URL=https://crowd.example.com/ \
 CROWD_APPLICATION=crowdbot \
 CROWD_PASSWORD=secret \
 SLACK_BOT_TOKEN=xoxo-xxx-xx-xx-xxxx \
 SLACK_ADMIN_IDS=U123456,U23456 \
 node .
+```
+
+#### 3-b. at Docker
+
+https://hub.docker.com/r/mtgto/crowdbot/
+
+Example (change it to your crowd account and slack token)
+
+```console
+docker run -e CROWDBOT_LANG=ja \
+-e CROWD_BASE_URL=https://crowd.example.com/ \
+-e CROWD_APPLICATION=crowdbot \
+-e CROWD_PASSWORD=secret \
+-e SLACK_BOT_TOKEN=xoxo-xxx-xx-xx-xxxx \
+-e SLACK_ADMIN_IDS=U123456,U23456 \
+-d --name crowdbot crowdbot
 ```
 
 ## Configuration
