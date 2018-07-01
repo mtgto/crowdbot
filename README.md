@@ -1,5 +1,7 @@
 # Crowdbot - A Slack bot integrate with Atlassian crowd
 
+[![dockerhub](https://img.shields.io/docker/automated/mtgto/crowdbot.svg)](https://hub.docker.com/r/mtgto/crowdbot/)
+
 ## Feature
 
 This bot supports management of groups of Atlassian crowd.
