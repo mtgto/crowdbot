@@ -67,7 +67,6 @@ const crowd = new CrowdClient({
         name: crowdAppName,
         password: crowdAppPassword,
     },
-    debug: true,
 });
 
 const configuration: SlackConfiguration = {
