@@ -52,7 +52,7 @@ https://hub.docker.com/r/mtgto/crowdbot/
 Example (change it to your crowd account and slack token)
 
 ```console
-docker run -e CROWDBOT_LANG=ja \
+docker run -e CROWDBOT_LANG=en \
 -e CROWD_BASE_URL=https://crowd.example.com/ \
 -e CROWD_APPLICATION=crowdbot \
 -e CROWD_PASSWORD=secret \
