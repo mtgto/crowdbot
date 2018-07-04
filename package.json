@@ -16,6 +16,7 @@
     },
     "private": true,
     "devDependencies": {
+        "@types/atlassian-crowd-client": "^2.0.0",
         "@types/node": "^10.3.5",
         "@types/uglifyjs-webpack-plugin": "^1.1.0",
         "@types/webpack": "^4.4.2",
