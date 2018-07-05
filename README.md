@@ -58,7 +58,13 @@ docker run -e CROWDBOT_LANG=en \
 -e CROWD_PASSWORD=secret \
 -e SLACK_BOT_TOKEN=xoxo-xxx-xx-xx-xxxx \
 -e SLACK_ADMIN_IDS=U123456,U23456 \
--d --name crowdbot crowdbot
+-d --name crowdbot mtgto/crowdbot
+```
+
+When stop:
+
+```console
+docker stop crowdbot
 ```
 
 ## Configuration
